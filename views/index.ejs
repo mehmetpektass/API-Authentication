@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Find Secrets</title>
+</head>
+
+<body>
+  <button type="submit" id="noAuth" onclick="window.location.href='/noAuth'">No Auth</button>
+  <button id="basicAuth" onclick="window.location.href='/basicAuth'">Basic Auth</button>
+  <button id="apiKey" onclick="window.location.href='/apiKey'">API Key</button>
+  <button id="bearerToken" onclick="window.location.href='/bearerToken'">Bearer Token</button>
+
+  <% if (id && secret) { %>
+    <div class="response-area">
+      <p><strong>Id:</strong> <%= id %></p>
+      <p><strong>Secret:</strong> <%= secret %></p>
+      <p><strong>Score:</strong> <%= emScore %></p>
+      <p><strong>User Name:</strong> <%= username %></p>
+      <p><strong>Time:</strong> <%= timestamp %></p>
+      <br>
+    </div>
+    <% } else {; %>
+      <p>No data available</p>
+    <% } %>
+</body>
+
+</html>
