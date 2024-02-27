@@ -31,7 +31,7 @@ node index.js
 ```
 
 # Authentication Methods
-### 1- No Auth
+### 1- No Authentication
 * Click on the "No Auth" button to fetch secret information without authentication.
 ### 2- Basic Auth
 * Click on the Basic Auth button to fetch secret information using Basic Authentication.
